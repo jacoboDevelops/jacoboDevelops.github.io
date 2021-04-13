@@ -1,7 +1,70 @@
 <!DOCTYPE html>
 <html>
+<title>My site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="mystyle.css">
+
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif ;}
+body{
+  background: #D4AA7D;
+background: -moz-linear-gradient(top, #D4AA7D 0%, #EFD09E 52%, #D2D8B3 100%);
+background: -webkit-linear-gradient(top, #D4AA7D 0%, #EFD09E 52%, #D2D8B3 100%);
+background: linear-gradient(to bottom, #D4AA7D 0%, #EFD09E 52%, #D2D8B3 100%);}
+h1 {letter-spacing: 6px} 
+</style>
 <body>
-<h1>THis will be site with nice interface one day</h1>
-<p>PIU_gr2 Jakub Dus</p>
+  <script src="script.js"></script>
+
+<!-- Header -->
+<div class="grid">
+
+<header>
+<div>
+  <h1>Jakub Duś</h1>
+</div>  
+  <div class="menu">
+    <a onclick="omnie()"   class="bar-item btn">O mnie </a>
+    <a   onclick="projekty()"  class="bar-item btn ">Projekty</a>
+    <a   onclick="kontakt()" class="bar-item btn">Kontakt</a>
+  
+    </div>
+  
+</header>
+
+<article id="omniecont">
+  
+Nazywam sie Jakub Duś i pewnego dnia będzie to ładna strona zbierająca informacje
+ na mój temat i na temat moich projektów.
+
+</article>
+<article   style="display:none;" id="projekt">
+  <a href="\project1.html" class="main-link" target="_blank">
+    <article class="card">
+      <div>
+        <p class="sub-heading">
+          Project
+          <time datetime="2021-04-13">
+            April 13, 2020 </time>
+        </p>
+        <h2>Projekt interfejsu</h2>
+        <p>
+            Zawiera przykładowy interfejs logowania i rejestracji
+        </p>
+      </div>
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JS</span>
+      </div>
+    </article>
+  </a>
+</article>
+<article id="kontakt" style="display:none;">
+  <a href = "mailto: official.dus@gmail.com">Send Email</a>
+</article>
 </body>
 </html>
