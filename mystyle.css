@@ -1,6 +1,6 @@
 .grid {
     display: grid;
-    grid-template-columns: 150px auto 150px;
+    grid-template-columns: 70px auto 70px;
     grid-gap: 1em;
   }
   
@@ -30,8 +30,8 @@
 
   }
   article{
-    grid-column: 2 / 3;
-
+    grid-column: 2 / 4;
+   
   }
 
 .btn,.button
@@ -100,6 +100,7 @@ span {
 a {
   text-decoration: none;
   transition: 0.2s;
+  float:left;
 }
  
 
