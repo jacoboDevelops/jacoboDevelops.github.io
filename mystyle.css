@@ -121,3 +121,30 @@ time {
 .main-link:focus-within a:focus {
   text-decoration: none;
 }
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: rgb(44, 107, 122);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  
+    top: -5px;
+    left: 105%;
+  
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
