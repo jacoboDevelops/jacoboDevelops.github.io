@@ -7,6 +7,7 @@
   header, footer {
     grid-column: 1 / 4;
     background: #90A9B7;
+    border-radius: 25px;
   }
   
   html {
@@ -25,7 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25vh;
+    height: 10vh;
     background: #90A9B7;
 
   }
@@ -48,7 +49,11 @@ text-align:center;
 width: 60px;
 cursor:pointer
 }
-.btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.btn:hover{
+  box-shadow:0 8px 16px 0 rgba(153, 98, 34, 0.2),0 6px 20px 0 rgba(146, 128, 28, 0.788);
+  border-radius: 10px;
+
+}
 
 
 
@@ -137,7 +142,10 @@ time {
 
   
 }
+.tooltip:hover{
+  box-shadow:0 8px 16px 0 rgba(153, 98, 34, 0.2),0 6px 20px 0 rgba(146, 128, 28, 0.788);
 
+}
 .tooltip .tooltiptext {
   visibility: hidden;
   width: auto;
@@ -169,7 +177,11 @@ a.svg:after {
   bottom: 0;
   left:0;
 }
+a.svg:hover
+{
+  transform: translateY(-10px);
 
+}
 li {
   display: inline;
 }
